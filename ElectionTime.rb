@@ -1,6 +1,6 @@
-# Election Time is a tool to help you tally th ballots and report election results!
+# Election Time is a tool to help you tally the ballots and report election results!
 
-#Initialize variables
+# Initialize variables
 winner = nil
 most_votes = 0
 votes = Array.new
@@ -51,7 +51,8 @@ puts "Election Results are:"
 candidates.each do |name|
     # print total tallies
     print "#{name} has #{tracker[name]} vote"
-    if tracker[name] != 1 # plural "votes" handling
+    # plural "votes" handling
+    if tracker[name] != 1 
         print "s"
     end
     puts "."
