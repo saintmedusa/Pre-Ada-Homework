@@ -120,7 +120,7 @@ while input > -1
   input2 = gets.chomp.to_i
   if input1 == input2
     input = input1
-    if input != -1
+    if input <= -1
     total += input
     end
   end
