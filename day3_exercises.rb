@@ -16,16 +16,15 @@ their total number of guesses.
 
 random_num = rand(0..1000)
 guesses = 0
-correct = false
+user_guess = nil
 
 puts "Welcome to the Random Number Game!
  Guess my number, between 0-1000 (inclusive)."
-while correct == false
-    puts "Guess the number:"
+ puts "Guess the number:"
+until user_guess == random_num
     user_guess = gets.to_i
     guesses += 1
     if user_guess == random_num
-        correct = true
         puts "Wow, you guessed it! And just in #{guesses} guesses."        
     elsif user_guess > random_num
         puts "Guess lower..."
