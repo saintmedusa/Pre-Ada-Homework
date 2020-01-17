@@ -20,7 +20,8 @@ user_guess = nil
 
 puts "Welcome to the Random Number Game!
  Guess my number, between 0-1000 (inclusive)."
- puts "Guess the number:"
+puts "Guess the number:"
+
 until user_guess == random_num
     user_guess = gets.to_i
     guesses += 1
@@ -69,12 +70,12 @@ puts "Let's play 'Love Me, Love Me Not'"
 puts "How many petals does your flower have?"
 petals = gets.to_i
 (1..petals).each do |n|
-    print "plucking petal ##{n}:"
-    if n % 2 == 0
-        puts "they love me not..."
-    else
-        puts "they love me!"
-    end
+  print "plucking petal ##{n}:"
+  if n % 2 == 0
+    puts "they love me not..."
+  else
+    puts "they love me!"
+  end
 end
 
 =begin
@@ -119,8 +120,8 @@ while input > -1
   input2 = gets.chomp.to_i
   if input1 == input2
     input = input1
-    if input <= -1
-    total += input
+    if input > -1
+      total += input
     end
   end
 end
