@@ -1,3 +1,5 @@
+# Just adding feedback
+
 # Election Time is a tool to help you tally the ballots and report election results!
 
 # Initialize variables
